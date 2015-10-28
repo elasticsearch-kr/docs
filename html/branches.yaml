@@ -95,7 +95,7 @@ packetbeat:
   _docs_1.0.0.Beta1: 7aeef3de312a8dd3bbd237b2f1de19d09bc4f6e9
   _docs_master: 77f1768b2760e705e576fa14be995c41a724b0c6
 sense:
-  _docs_master: 8ae62f26f0bb579634567aecaca075217dcbd6ad
+  _docs_master: b7ce0701731a125606e2efe19f9233255b4afee5
 topbeat:
   _docs_1.0.0-beta3: 9ae3c746d7364fbea864823909440c0c6521d5e6
   _docs_1.0.0-beta4: 49fcfe28fb686622bb9112b79b54bef6ad636c07
