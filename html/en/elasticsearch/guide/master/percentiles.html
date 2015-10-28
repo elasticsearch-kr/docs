@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -645,7 +647,7 @@ it:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">
 { "index": {}}
 { "latency" : 380, "zone" : "EU", "timestamp" : "2014-10-28" }
 { "index": {}}
-{ "latency" : 319, "zone" : "EU", "timestamp" : "2014-10-29" }</pre></div><a class="sense_widget" href="sense_widget.html?snippets/300_Aggregations/65_percentiles.json" target="sense">View in Sense</a><p>This data contains three values: a latency, a data center zone, and a date
+{ "latency" : 319, "zone" : "EU", "timestamp" : "2014-10-29" }</pre></div><div class="sense_widget" data-snippet="snippets/300_Aggregations/65_percentiles.json"></div><p>This data contains three values: a latency, a data center zone, and a date
 timestamp.  Let’s run <code class="literal">percentiles</code> over the whole dataset to get a feel for
 the distribution:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">GET /website/logs/_search?search_type=count
 {
@@ -661,7 +663,7 @@ the distribution:</p><div class="pre_wrapper"><pre class="programlisting prettyp
             }
         }
     }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/300_Aggregations/65_percentiles.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO208-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/300_Aggregations/65_percentiles.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO208-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The <code class="literal">percentiles</code> metric is applied to the <code class="literal">latency</code> field.
 </p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO208-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 For comparison, we also execute an <code class="literal">avg</code> metric on the same field.
@@ -710,7 +712,7 @@ correlated to the geographic zone of the data center:</p><div class="pre_wrapper
             }
         }
     }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/300_Aggregations/65_percentiles.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO209-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/300_Aggregations/65_percentiles.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO209-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 First we separate our latencies into buckets, depending on their zone.
 </p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO209-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 Then we calculate the percentiles per zone.
@@ -784,7 +786,7 @@ requests are actually meeting that SLA (and hopefully at least under 800ms!).</p
             }
         }
     }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/300_Aggregations/65_percentiles.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO210-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/300_Aggregations/65_percentiles.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO210-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The <code class="literal">percentile_ranks</code> metric accepts an array of values that you want ranks for.
 </p></td></tr></table></div><p>After running this aggregation, we get two values back:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">"aggregations": {
   "zones": {
@@ -982,8 +984,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -1013,6 +1015,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -616,7 +618,7 @@ value and its hash are stored in the index:</p><div class="pre_wrapper"><pre cla
       }
     }
   }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/mapper-murmur3-usage/1.json" target="sense">View in Sense</a><p>Such a mapping would allow to refer to <code class="literal">my_field.hash</code> in order to get hashes
+}</pre></div><div class="sense_widget" data-snippet="snippets/mapper-murmur3-usage/1.json"></div><p>Such a mapping would allow to refer to <code class="literal">my_field.hash</code> in order to get hashes
 of the values of the <code class="literal">my_field</code> field. This is only useful in order to run
 <code class="literal">cardinality</code> aggregations:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js"># Example documents
 PUT my_index/my_type/1
@@ -638,7 +640,7 @@ GET my_index/_search
       }
     }
   }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/mapper-murmur3-usage/2.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO13-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/mapper-murmur3-usage/2.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO13-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 Counting unique values on the <code class="literal">my_field.hash</code> field
 </p></td></tr></table></div><p>Running a <code class="literal">cardinality</code> aggregation on the <code class="literal">my_field</code> field directly would
 yield the same result, however using <code class="literal">my_field.hash</code> instead might result in
@@ -777,8 +779,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -808,6 +810,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

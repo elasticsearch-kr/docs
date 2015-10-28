@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -621,7 +623,7 @@ more specific fields:</p><div class="pre_wrapper"><pre class="programlisting pre
          "_source": "views"
       }
    ]
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/030_Data/50_Mget.json" target="sense">View in Sense</a><p>The response body also contains a <code class="literal">docs</code> array<a id="id-1.4.5.23.6.2" class="indexterm"></a>
+}</pre></div><div class="sense_widget" data-snippet="snippets/030_Data/50_Mget.json"></div><p>The response body also contains a <code class="literal">docs</code> array<a id="id-1.4.5.23.6.2" class="indexterm"></a>
 <a id="id-1.4.5.23.6.3" class="indexterm"></a> that contains a response
 per document, in the same order as specified in the request. Each of these
 responses is the same response body that we would expect from an individual
@@ -649,7 +651,7 @@ responses is the same response body that we would expect from an individual
          }
       }
    ]
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/030_Data/50_Mget.json" target="sense">View in Sense</a><p>If the documents you wish to retrieve are all in the same <code class="literal">_index</code> (and maybe
+}</pre></div><div class="sense_widget" data-snippet="snippets/030_Data/50_Mget.json"></div><p>If the documents you wish to retrieve are all in the same <code class="literal">_index</code> (and maybe
 even of the same <code class="literal">_type</code>), you can specify a default <code class="literal">/_index</code> or a
 default <code class="literal">/_index/_type</code> in the URL.</p><p>You can still override these values in the individual requests:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">GET /website/blog/_mget
 {
@@ -657,7 +659,7 @@ default <code class="literal">/_index/_type</code> in the URL.</p><p>You can sti
       { "_id" : 2 },
       { "_type" : "pageviews", "_id" :   1 }
    ]
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/030_Data/50_Mget.json" target="sense">View in Sense</a><p>In fact, if all the documents have the same <code class="literal">_index</code> and <code class="literal">_type</code>, you
+}</pre></div><div class="sense_widget" data-snippet="snippets/030_Data/50_Mget.json"></div><p>In fact, if all the documents have the same <code class="literal">_index</code> and <code class="literal">_type</code>, you
 can just pass an array of <code class="literal">ids</code> instead of the full <code class="literal">docs</code> array:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">GET /website/blog/_mget
 {
    "ids" : [ "2", "1" ]
@@ -683,7 +685,7 @@ nonexistence is reported in the response body:</p><div class="pre_wrapper"><pre 
       "found" :    false  <a id="CO13-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
     }
   ]
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/030_Data/50_Mget.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO13-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/030_Data/50_Mget.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO13-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 This document was not found.
 </p></td></tr></table></div><p>The fact that the second document wasn’t found didn’t affect the retrieval of
 the first document. Each doc is retrieved and reported on individually.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>The HTTP status code for the preceding request is <code class="literal">200</code>, even though one
@@ -821,8 +823,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -852,6 +854,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

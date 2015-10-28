@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -600,14 +602,14 @@
           <a href="delete-by-query-plugin-reason.html">Why Delete-By-Query is a plugin
                »
             </a></span></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="delete-by-query-usage"></a>Using Delete-by-Query<a href="https://github.com/elastic/elasticsearch/edit/2.1/docs/plugins/delete-by-query.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>The query can either be provided using a simple query string as
-a parameter:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">DELETE /twitter/tweet/_query?q=user:kimchy</pre></div><a class="sense_widget" href="sense_widget.html?snippets/delete-by-query-usage/1.json" target="sense">View in Sense</a><p>or using the <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/2.1/query-dsl.html" target="_top">Query DSL</a> defined within the request body:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">DELETE /twitter/tweet/_query
+a parameter:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">DELETE /twitter/tweet/_query?q=user:kimchy</pre></div><div class="sense_widget" data-snippet="snippets/delete-by-query-usage/1.json"></div><p>or using the <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/2.1/query-dsl.html" target="_top">Query DSL</a> defined within the request body:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">DELETE /twitter/tweet/_query
 {
   "query": { <a id="CO4-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
     "term": {
       "user": "kimchy"
     }
   }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/delete-by-query-usage/2.json" target="sense">View in Sense</a><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO4-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="sense_widget" data-snippet="snippets/delete-by-query-usage/2.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO4-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The query must be passed as a value to the <code class="literal">query</code> key, in the same way as
 the <a class="ulink" href="https://www.elastic.co/guide/en/elasticsearch/reference/2.1/search-search.html" target="_top">search api</a>.
 </p></td></tr></table></div><p>Both of the above examples end up doing the same thing, which is to delete all
@@ -817,8 +819,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -848,6 +850,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

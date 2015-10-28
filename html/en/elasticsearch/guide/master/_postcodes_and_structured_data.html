@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -625,7 +627,7 @@ fields, so we could create our index as follows:</p><div class="pre_wrapper"><pr
             }
         }
     }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/130_Partial_Matching/10_Prefix_query.json" target="sense">View in Sense</a><p>And index some <a id="id-1.5.7.11.7.1" class="indexterm"></a>
+}</pre></div><div class="sense_widget" data-snippet="snippets/130_Partial_Matching/10_Prefix_query.json"></div><p>And index some <a id="id-1.5.7.11.7.1" class="indexterm"></a>
 <a id="id-1.5.7.11.7.2" class="indexterm"></a>postcodes:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">PUT /my_index/address/1
 { "postcode": "W1V 3DG" }
 
@@ -639,7 +641,7 @@ PUT /my_index/address/4
 { "postcode": "WC1N 1LZ" }
 
 PUT /my_index/address/5
-{ "postcode": "SW5 0BE" }</pre></div><a class="sense_widget" href="sense_widget.html?snippets/130_Partial_Matching/10_Prefix_query.json" target="sense">View in Sense</a><p>Now our data is ready to be queried.</p></div><div class="navfooter"><span class="prev"><a href="partial-matching.html">
+{ "postcode": "SW5 0BE" }</pre></div><div class="sense_widget" data-snippet="snippets/130_Partial_Matching/10_Prefix_query.json"></div><p>Now our data is ready to be queried.</p></div><div class="navfooter"><span class="prev"><a href="partial-matching.html">
               « 
               Partial Matching</a>
            
@@ -770,8 +772,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -801,6 +803,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

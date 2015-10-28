@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -635,7 +637,7 @@ dynamic setting, which defaults to <code class="literal">1m</code>.</p><p>This s
   "settings": {
     "index.unassigned.node_left.delayed_timeout": "5m"
   }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/delayed-allocation/1.json" target="sense">View in Sense</a><p>With delayed allocation enabled, the above scenario changes to look like this:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+}</pre></div><div class="sense_widget" data-snippet="snippets/delayed-allocation/1.json"></div><p>With delayed allocation enabled, the above scenario changes to look like this:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
 Node 5 loses network connectivity.
 </li><li class="listitem">
 The master promotes a replica shard to primary for each primary that was on Node 5.
@@ -658,7 +660,7 @@ the missing shards immediately, just update the timeout to zero:</p><div class="
   "settings": {
     "index.unassigned.node_left.delayed_timeout": "0"
   }
-}</pre></div><a class="sense_widget" href="sense_widget.html?snippets/delayed-allocation/2.json" target="sense">View in Sense</a><p>You can reset the timeout as soon as the missing shards have started to recover.</p></div><div class="navfooter"><span class="prev"><a href="index-modules-allocation.html">
+}</pre></div><div class="sense_widget" data-snippet="snippets/delayed-allocation/2.json"></div><p>You can reset the timeout as soon as the missing shards have started to recover.</p></div><div class="navfooter"><span class="prev"><a href="index-modules-allocation.html">
               « 
               Index Shard Allocation</a>
            
@@ -789,8 +791,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -820,6 +822,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>

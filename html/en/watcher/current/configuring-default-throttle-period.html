@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Configuring the Default Throttle Period</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elasticsearch Watcher [watcher-1.0]" /><link rel="up" href="administering-watcher.html" title="Administering Watcher" /><link rel="prev" href="email-services.html" title="Configuring Watcher to Send Email" /><link rel="next" href="configuring-default-http-timeouts.html" title="Configuring the Default HTTP Timeouts" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Configuring the Default Throttle Period</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Elasticsearch Watcher [2.0]" /><link rel="up" href="administering-watcher.html" title="Administering Watcher" /><link rel="prev" href="logstash-integration.html" title="Integrating Watcher with Logstash" /><link rel="next" href="configuring-default-http-timeouts.html" title="Configuring the Default HTTP Timeouts" />
   
  	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	
@@ -47,15 +47,15 @@
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png?change=550"> -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/skel.css" />	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/style.css" />	
-	<script src="https://static-www.elastic.co/static/js/skel.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/skel.css" />	
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/style.css" />	
+	<script src="https://stag-static-www.elastic.co/static/js/skel.min.js"></script>
 	
-		<script type="text/javascript">form_name = "" ; cdn_url="https://static-www.elastic.co"</script>
+		<script type="text/javascript">form_name = "" ; cdn_url="https://stag-static-www.elastic.co"</script>
 		
 
-	<script src="https://static-www.elastic.co/static/js/init.js"></script>
-	<script src="https://static-www.elastic.co/static/js/jquery.min.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/init.js"></script>
+	<script src="https://stag-static-www.elastic.co/static/js/jquery.min.js"></script>
 	<!--<script type="text/javascript">
 	    (function() {
 	        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=nAD6PCOPrX',
@@ -502,7 +502,7 @@
 		<div class="3u">
 			<div class="languages-wrapper">
 				<div class="global-language">
-					<img src="https://static-www.elastic.co/static/img/icon-globe.png"/>
+					<img src="https://stag-static-www.elastic.co/static/img/icon-globe.png"/>
 					<ul class="all-languages">
 						
 							<li><a href="/">English</a></li>
@@ -512,6 +512,8 @@
 							<li><a href="/de/">German</a></li>
 						
 							<li><a href="/jp/">Japanese</a></li>
+						
+							<li><a href="/kr/">Korean</a></li>
 						
 					</ul>
 				</div>
@@ -590,10 +592,10 @@
 
             <!-- start body -->
 <div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Elasticsearch Watcher
-      [watcher-1.0]
-    </a></span> » <span class="breadcrumb-link"><a href="administering-watcher.html">Administering Watcher</a></span> » <span class="breadcrumb-node">Configuring the Default Throttle Period</span></div><div class="navheader"><span class="prev"><a href="email-services.html">
+      [2.0]
+    </a></span> » <span class="breadcrumb-link"><a href="administering-watcher.html">Administering Watcher</a></span> » <span class="breadcrumb-node">Configuring the Default Throttle Period</span></div><div class="navheader"><span class="prev"><a href="logstash-integration.html">
               « 
-              Configuring Watcher to Send Email</a>
+              Integrating Watcher with Logstash</a>
            
         </span><span class="next">
            
@@ -605,9 +607,9 @@ define a throttle period on the watch level that will serve as a default period 
 all those actions that don’t specify a throttle period themselves.</p><p>To change the default throttle period for all actions that are not configured with a
 throttle period neither on the action level nor the watch level, you configure the
 <code class="literal">watcher.execution.default_throttle_period</code> setting in <code class="literal">elasticsearch.yml</code>.</p><p>For example, to set the default throttle period to 15 minutes, add the following entry
-to your <code class="literal">elasticsearch.yml</code> file and restart Elasticsearch:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">watcher.execution.default_throttle_period: 15m</pre></div></div><div class="navfooter"><span class="prev"><a href="email-services.html">
+to your <code class="literal">elasticsearch.yml</code> file and restart Elasticsearch:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">watcher.execution.default_throttle_period: 15m</pre></div></div><div class="navfooter"><span class="prev"><a href="logstash-integration.html">
               « 
-              Configuring Watcher to Send Email</a>
+              Integrating Watcher with Logstash</a>
            
         </span><span class="next">
            
@@ -736,8 +738,8 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
     	<div class="status"></div>
 	</div> -->
   	<style></style>
-   	<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?clr=144"></script>
+   	<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?clr=144"></script>
 
    	
    	
@@ -767,6 +769,7 @@ MktoForms2.loadForm("//app-lon02.marketo.com", "813-MAM-392", 1398,function(form
 </script>	
 
             <script type="text/javascript" src="docs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type='text/javascript' src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>
 
             </body>
